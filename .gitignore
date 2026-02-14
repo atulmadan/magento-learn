@@ -1,0 +1,24 @@
+# 1. Ignore EVERYTHING in the root
+/*
+!.gitignore
+
+# 2. Allow Git to look into the src folder
+!/src/
+
+# 3. Inside src, ignore EVERYTHING by default (this blocks /src/vendor, /src/bin, etc.)
+/src/*
+
+# 4. Explicitly allow ONLY the app folder and composer files
+!/src/app/
+!/src/composer.json
+!/src/composer.lock
+
+# 5. Inside src/app, ignore core files and only allow custom ones
+/src/app/*
+!/src/app/code/
+!/src/app/design/
+!/src/app/etc/
+
+# 6. Safety: Ignore local database/env settings
+/src/app/etc/env.php
+/src/app/etc/config.php
