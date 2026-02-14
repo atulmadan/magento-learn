@@ -1,0 +1,11 @@
+<?php
+/**
+ @var \Macademy\Jumpstart\Block\Create $block
+ **/
+?>
+<form action="<?= $block->getUrl('jumpstart/index/save') ?>" method="post">
+    <?= $block->getBlockHtml('formkey'); ?>
+
+    <input type="text" name="message" required />
+    <button type="submit">Save</button>
+</form>

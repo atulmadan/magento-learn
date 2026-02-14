@@ -1,0 +1,14 @@
+<h2>Messages</h2>
+
+<?php
+/** @var \Macademy\Jumpstart\Block\Message $block */
+?>
+
+
+<?php foreach ($block->getMessages() as $message): ?>
+    <div>
+        <strong>ID:</strong> <?= $message->getId(); ?><br>
+        <strong>Message:</strong> <?= $message->getMessage(); ?><br>
+        <hr>
+    </div>
+<?php endforeach; ?>
