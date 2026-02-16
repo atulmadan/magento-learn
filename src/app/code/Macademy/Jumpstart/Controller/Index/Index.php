@@ -12,7 +12,7 @@ class Index implements HttpGetActionInterface
 {
 
 
-    public function __construct(Context $context, protected PageFactory $pageFactory)
+    public function __construct( protected PageFactory $pageFactory)
     {
 //        parent::__construct($context);
 //        $this->pageFactory = $pageFactory;

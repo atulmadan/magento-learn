@@ -3,7 +3,7 @@
 !.gitignore
 
 # 2. Allow Git to look into the src folder
-!/src/
+!/src/app/
 
 # 3. Inside src, ignore EVERYTHING by default (this blocks /src/vendor, /src/bin, etc.)
 /src/*

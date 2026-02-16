@@ -5,10 +5,17 @@
 ?>
 
 
+
+
+
 <?php foreach ($block->getMessages() as $message): ?>
     <div>
         <strong>ID:</strong> <?= $message->getId(); ?><br>
         <strong>Message:</strong> <?= $message->getMessage(); ?><br>
+        <a href="<?= $block->getUrl('jumpstart/index/edit', ['id' => $message->getId()]) ?>">
+    Edit
+</a>
+
         <hr>
     </div>
 <?php endforeach; ?>
